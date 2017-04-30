@@ -1,0 +1,21 @@
+{
+    "name": "profitcode/yii2-blocks",
+    "description": "Yii2 blocks to insert in templates or pages",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","blocks"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "cheaterBY",
+            "email": "cheaterby@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "profitcode\\blocks\\": ""
+        }
+    }
+}
