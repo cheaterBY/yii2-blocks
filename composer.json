@@ -19,6 +19,6 @@
         }
     },
     "extra": {
-        "bootstrap": "profitcode\\blocks\\Bootstrap",
+        "bootstrap": "profitcode\\blocks\\Bootstrap"
     }
 }
