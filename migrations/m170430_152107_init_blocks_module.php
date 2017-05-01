@@ -9,7 +9,6 @@ class m170430_152107_init_blocks_module extends Migration
     {
         $this->createTable('{{%block}}', [
             'id' => $this->primaryKey(),
-            'name' => $this->string()->notNull(),
             'title' => $this->string(),
             'content' => $this->text(),
             'format' => $this->smallInteger()->notNull(),
@@ -18,7 +17,6 @@ class m170430_152107_init_blocks_module extends Migration
             'updated_at' => $this->integer(),
         ], $this->tableOptions);
 
-        $this->createIndex('{{%block_unique_name}}', '{{%block}}', 'name', true);
     }
 
     public function down()

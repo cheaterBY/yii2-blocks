@@ -18,8 +18,8 @@ class BlockSearch extends Block
     public function rules()
     {
         return [
-            [['id', 'format', 'active', 'created_at', 'updated_at'], 'integer'],
-            [['name', 'title', 'content'], 'safe'],
+            [['id', 'active', 'created_at', 'updated_at'], 'integer'],
+            [['title', 'format', 'content'], 'safe'],
         ];
     }
 
@@ -60,13 +60,12 @@ class BlockSearch extends Block
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'format' => $this->format,
             'active' => $this->active,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
+        $query->andFilterWhere(['like', 'format', $this->format])
             ->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'content', $this->content]);
 

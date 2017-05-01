@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model profitcode\blocks\models\Block */
 
-$this->title = $model->name;
+$this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('blocks', 'Blocks'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -29,13 +29,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'name',
             'title',
             'content:ntext',
             'format',
-            'active',
-            'created_at',
-            'updated_at',
+            'active:boolean',
+            'created_at:datetime',
+            'updated_at:datetime',
         ],
     ]) ?>
 

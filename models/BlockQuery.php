@@ -9,10 +9,10 @@ namespace profitcode\blocks\models;
  */
 class BlockQuery extends \yii\db\ActiveQuery
 {
-    /*public function active()
+    public function active()
     {
-        return $this->andWhere('[[status]]=1');
-    }*/
+        return $this->andWhere('[[active]]=1');
+    }
 
     /**
      * @inheritdoc

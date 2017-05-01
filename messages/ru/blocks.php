@@ -18,11 +18,12 @@
  */
 return [
     'ID' => 'ID',
-    'Name' => 'Системное имя',
     'Title' => 'Заголовок',
     'Content' => 'Содержимое',
     'Format' => 'Формат',
     'Active' => 'Включен',
     'Created at' => 'Создан',
     'Updated at' => 'Обновлен',
+    'Variable for template' => 'Переменная для шаблонов',
+    'System name' => 'Системное имя'
 ];

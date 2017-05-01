@@ -14,7 +14,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="block-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a(Yii::t('blocks', 'Create Block'), ['create'], ['class' => 'btn btn-success']) ?>
@@ -24,7 +23,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             'id',
-            'name',
+            [
+                'class' => \yii\grid\DataColumn::className(),
+                'label' => Yii::t('blocks', 'System name'),
+                'value' => function ($model) {
+                    return $model->getSystemName();
+                }
+            ],
+            [
+                'class' => \yii\grid\DataColumn::className(),
+                'label' => Yii::t('blocks', 'Variable for template'),
+                'value' => function ($model) {
+                    return '{{' . $model->getSystemName() . '}}';
+                }
+            ],
             'title',
             'content:ntext',
             'format',

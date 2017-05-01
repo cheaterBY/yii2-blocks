@@ -6,10 +6,10 @@ use yii\helpers\Html;
 /* @var $model profitcode\blocks\models\Block */
 
 $this->title = Yii::t('blocks', 'Update {modelClass}: ', [
-    'modelClass' => 'Block',
-]) . $model->name;
+        'modelClass' => 'Block',
+    ]) . $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('blocks', 'Blocks'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Yii::t('blocks', 'Update');
 ?>
 <div class="block-update">

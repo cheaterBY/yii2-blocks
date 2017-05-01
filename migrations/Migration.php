@@ -16,7 +16,6 @@ class Migration extends \yii\db\Migration
     protected $restrict = 'RESTRICT';
     protected $cascade = 'CASCADE';
     protected $dbType;
-    
 
     /**
      * @inheritdoc
