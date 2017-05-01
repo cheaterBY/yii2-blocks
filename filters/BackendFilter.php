@@ -1,6 +1,6 @@
 <?php
 
-namespace proditcode\blocks\filters;
+namespace profitcode\blocks\filters;
 
 use yii\web\NotFoundHttpException;
 use yii\base\ActionFilter;
