@@ -17,5 +17,8 @@
         "psr-4": {
             "profitcode\\blocks\\": ""
         }
+    },
+    "extra": {
+        "bootstrap": "profitcode\\blocks\\Bootstrap",
     }
 }

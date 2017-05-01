@@ -52,8 +52,8 @@ class Block extends \yii\db\ActiveRecord
             'content' => Yii::t('blocks', 'Content'),
             'format' => Yii::t('blocks', 'Format'),
             'active' => Yii::t('blocks', 'Active'),
-            'created_at' => Yii::t('blocks', 'Created At'),
-            'updated_at' => Yii::t('blocks', 'Updated At'),
+            'created_at' => Yii::t('blocks', 'Created at'),
+            'updated_at' => Yii::t('blocks', 'Updated at'),
         ];
     }
 
