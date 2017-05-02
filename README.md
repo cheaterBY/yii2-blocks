@@ -27,5 +27,14 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
+with block id
+
 ```php
-<?= \profitcode\blocks\AutoloadExample::widget(); ?>```
+<?= \profitcode\blocks\models\Block::render(1); ?>```
+
+```
+or block system name
+
+
+```php
+<?= \profitcode\blocks\models\Block::render('block_1'); ?>```
