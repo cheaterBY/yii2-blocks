@@ -121,8 +121,8 @@ class Block extends \yii\db\ActiveRecord
         $template = "/block_([0-9]*)/";
         preg_match_all($template, $name, $result);
 
-        if (!empty($result[1])) {
-            $model = self::findById($result[1]);
+        if (!empty($result[1][0])) {
+            $model = self::findById($result[1][0]);
         }
 
         if ($model === null) {
