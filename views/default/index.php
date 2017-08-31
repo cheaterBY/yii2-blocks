@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('blocks', 'Create Block'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('blocks', 'Add block'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -45,7 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'updated_at:datetime',
             [
                 'class' => 'yii\grid\ActionColumn',
-                'template' => '{update} {delete}'
             ],
         ],
     ]); ?>

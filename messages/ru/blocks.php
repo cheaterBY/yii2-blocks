@@ -21,9 +21,14 @@ return [
     'Title' => 'Заголовок',
     'Content' => 'Содержимое',
     'Format' => 'Формат',
+    'Update' => 'Редактировать',
+    'Delete' => 'Удалить',
     'Active' => 'Включен',
+    'Blocks' => 'Блоки',
     'Created at' => 'Создан',
     'Updated at' => 'Обновлен',
     'Variable for template' => 'Переменная для шаблонов',
-    'System name' => 'Системное имя'
+    'System name' => 'Системное имя',
+    'Add block' => 'Добавить блок',
+    'Adding block' => 'Добавление блок',
 ];

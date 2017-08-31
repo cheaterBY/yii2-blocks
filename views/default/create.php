@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model profitcode\blocks\models\Block */
 
-$this->title = Yii::t('blocks', 'Create Block');
+$this->title = Yii::t('blocks', 'Adding block');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('blocks', 'Blocks'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
