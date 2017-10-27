@@ -37,8 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     return '{{' . $model->getSystemName() . '}}';
                 }
             ],
-            'title',
-            'content:ntext',
+            'title',            
             'format',
             'active:boolean',
             'created_at:datetime',
